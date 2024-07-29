@@ -1,0 +1,90 @@
+<html>
+<head>
+    <title>Rate Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+       
+        }
+        .rate-us-form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #6dd1ea;
+        }
+        .rate-us-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .rate-us-form input[type="radio"] {
+            margin-right: 10px;
+        }
+        .rate-us-form textarea {
+            width: 100%;
+            height: 100px;
+            margin-top: 10px;
+        }
+        .rate-us-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #6dd1ea;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .rate-us-form button:hover {
+            background-color: #6dd1ea;
+        }
+
+	 body {
+            
+        
+            
+           
+            background-color: #6dd1ea;
+          
+          } 
+       
+              
+    </style>
+    <script>
+	   function validate(){
+		alert("Feedback is submitted");
+		window.open("main songs page.html");
+		}
+   </script>
+</head>
+<body>
+    
+    
+
+    <h1>Rate Us</h1>
+    <body bgcolor="#6dd1ea">
+    <div class="rate-us-form">
+        <form action="/submit-rating" method="POST">
+            <label for="rating">How would you rate your experience with us?</label><br>
+            <input type="radio" id="rating-excellent" name="rating" value="excellent">
+            <label for="rating-excellent">Excellent</label><br>
+            <input type="radio" id="rating-good" name="rating" value="good">
+            <label for="rating-good">Good</label><br>
+            <input type="radio" id="rating-average" name="rating" value="average">
+            <label for="rating-average">Average</label><br>
+            <input type="radio" id="rating-poor" name="rating" value="poor">
+            <label for="rating-poor">Poor</label><br>
+            
+            <label for="feedback">Tell us more about your experience (optional):</label><br>
+            <textarea id="feedback" name="feedback"></textarea><br>
+            
+            <center><input type="button" onclick="validate()" value="submit"></center>
+        </form>
+    </div>
+</body>
+</html>

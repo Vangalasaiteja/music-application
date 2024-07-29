@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>LOGIN PAGE</title>
+		<script type= "text/javascript">
+			
+			function validate()
+			{ 
+			  var a = document.getElementById("tf1").value;
+			  
+			  var b = document.getElementById("tf2").value;
+		
+			 
+			  var sai = "23951A0221"
+			  var teja = "welcome"
+			  if(a == sai){
+				if(b == teja){
+					 window.open("main songs page.html")
+					}
+			  else{
+				alert("invalid username or password")}}
+			  else{
+				alert("invalid username or password")}
+			}
+		</script>
+	</head>
+	<body>
+		<div align= "center"><font color="white"><body bgcolor= "black">
+		<h1><center><font color="white">TAP TO LISTEN</h1></center></font>
+		<hr width="250" color="red">
+		<table border = "1" align="center" height="350" width="300" bordercolor = "black" >
+		
+		<td>
+		<center><font color = "sky blue"><h2>User Login</h2></font></center>
+		<form>
+			<font color="white">
+			<form type="myfile">
+			<h2>username:<input type= "text" name= "username" placeholder="username" id= "tf1" /></h2>
+			<h2>password:<input type= "password" name= "password" placeholder="password" id= "tf2" /></h2>
+			<center><h2><input type = "button" onclick = "validate()" value ="login">
+			<input type= "reset" value= "clear"/></h2></center>
+			<center><h4>forgoted password?<a href = "forgot.html"> Forgot Password </a></h4></center>
+		</td>
+		</table>
+		</div>
+		</font> 
+		</form>
+		
+	</body>
+</html>

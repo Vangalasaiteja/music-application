@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>forgot password</title>
+	<script>
+
+		function send(){
+					var a = document.getElementById("us").value;
+					var b = document.getElementById("ph").value;
+					var sai = "23951A0221"
+					var teja = "8919492615"
+				
+					if(a == sai){
+							
+							
+						if(b == teja){
+					
+						alert("otp has been sent")
+					
+						
+						}
+					
+						else{
+							alert("invalid phone number");}}
+					else{
+						alert("invalid username");}
+					
+
+				}
+
+		
+	function validate() {
+					
+					var b = document.getElementById("us").value; 
+    					var d = document.getElementById("pas").value;
+					var e = document.getElementById("cpas").value;
+
+					var c = document.getElementById("otp").value;
+    					
+    					var otp ="1234";
+					
+				       
+					
+					if (c == otp) {
+						alert("otp is validated");
+						
+					if (d == e) {
+          					if (e.length > 8) {  // Check if the password length is more than 8 characters
+              						alert("OTP is validated");
+                					alert("Password has been changed");
+							alert("username:" + b +" \n" +"Password:" + e)
+                					window.open("main home page.html");
+          					} else {
+               						alert("Password must be min 8 characters long");
+            								}
+      					 } else {
+           					alert("Both passwords are not the same");}	
+       						 
+    					} else {
+        					alert("Invalid OTP");
+    									}
+				
+				}
+				
+		
+	</script>
+	</head>
+	<body>
+		<body bgcolor = "black">
+		<marquee diection:"left" scrollamount="15" bgcolor="#26dfcf" behavior="scroll"><h1><i>(TOL) TAP TO LISTEN</i></h1></marquee>
+		<br><br>
+
+	<table border ="1" align ="center" width="500" ><br>
+		<tr>
+		<th><font color="white"><h1><center>FORGOT PASSWORD</center></h1></font>
+		<hr width="275" color="red"></th>
+		</tr>
+		<td>
+	<form>
+		<form type= "myform"><font color ="white"><center>
+		<center><h2>enter username:<br><input type="text" name="username"  placeholder="username" id ="us" /></h2>
+		<h2>enter phone no:<br><input type="text" name="phone no"  placeholder="phone number" id ="ph" />
+		<input type ="button" onclick = "send()"  value ="send"></h2> 
+		<h2>enter otp:<br><input type="text" name="otp"  placeholder="otp" id ="otp" /></h2>
+		<h2>enter password:<br><input type="password" name="password"  placeholder="password" id ="pas" /></h2> 
+		<h2>enter confirm password:<br><input type="password" name="password"  placeholder="confirm password" id ="cpas" /></h2>
+
+		<input type ="button" onclick ="validate()" value ="submit"></h2></center>
+		</td>
+	</table>
+		
+	</body>
+</html>	

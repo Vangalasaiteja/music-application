@@ -1,0 +1,79 @@
+<html>
+	<head>
+	<title>CREATE PAGE</title>
+	
+	<script type= "text/javascript">
+
+	 function validate() 
+	{
+	 var a = document.getElementById("us").value;
+	 
+	 var b = document.getElementById("na").value;
+	 
+	 var c = document.getElementById("ph").value;
+	 var d = document.getElementById("em").value;
+	 var e = document.getElementById("pa").value;
+	 var f = document.getElementById("cpa").value;
+	 var g = [];
+	 var p1 = new RegExp("^[a-z0-9]*");
+	 var p2 = new RegExp("^[a-z0-9]*@gmail.com$");
+	 var p3 = new RegExp("^[0-9]{10}$");
+	 var p4 = new RegExp("^[a-z0-9]*");
+	 if(p1.test(a) && (a.length>=8)){
+		g.push("a")}
+	else{
+		alert("invalid username")}
+	 if(p1.test(b)){
+		g.push("b")}
+	 else{
+		alert("invalid name")}
+	 if(p3.test(c)){
+		g.push("c")}
+	 else{
+		alert("invalid phone number")}
+	 if(p2.test(d)){
+		g.push("d")}
+	else{
+	 	alert("invalid email id")}
+	 if(e == f){
+		  if(p4.test(f) && (f.length>=8)){
+		g.push("e")}
+		else{
+			alert("password must be min 8 characters")}}
+	 else{
+		alert("both password are not same")}
+	
+	if(g == "a,b,c,d,e"){
+		alert("Account has bean created")
+		alert("username:" + a  +" \n" +"Password:" + f)
+		window.open("login sign up.html")}
+	else{
+		}
+	
+	}
+	</script>
+</head>
+	
+	<body>
+	<body bgcolor="black">
+	<div align= "center">
+	<table border ="1" align ="center" width="500" ><br>
+	<tr>
+	<th><font color="white"><h1><center>CREATE ACCOUNT</center></h1></font>
+	<hr width="275" color="red"></th>
+	</tr>
+	<td>
+	<form>
+	<form type= "myform"><font color ="white"><center>
+	<h2>username:<br> <input type="text" name="username" placeholder="username" id="us"><br></h2>
+	<h2>Name:<br> <input type="text" name="Name" placeholder="name" id="na"></h2>
+	<h2>phone no:<br> <input type="text" name="phoneno" placeholder="phone no" id="ph"><br></h2>
+	<h2>email id:<br> <input type="text" name="emailid" placeholder="email" id="em"></h2>
+	<h2>password:<br> <input type="password" name="password" placeholder="passworrd" id="pa"></h2>
+	<h2>confirm password:<br><input type="password" name="confirm password"  placeholder="confirm password" id="cpa"></h2>
+	<h2><input type="button" value="submit" onclick="validate()"></h2></td></center>
+	</font>
+	</table>
+	</div>
+	</body>
+</html>
